@@ -17,6 +17,7 @@
     "url": "https://github.com/patcon/hubot-cfa-brigade-checkin/issues"
   },
   "dependencies": {
+    "scoped-http-client": "^0.11.0",
     "coffee-script": "~1.6"
   },
   "devDependencies": {
