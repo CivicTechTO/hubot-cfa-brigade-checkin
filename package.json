@@ -1,0 +1,43 @@
+{
+  "name": "hubot-cfa-brigade-checkin",
+  "description": "A hubot script that allows CfA brigade checkins from Slack",
+  "version": "0.0.0",
+  "author": "Patrick Connolly <patrick.c.connolly@gmail.com>",
+  "license": "MIT",
+
+  "keywords": [
+    "codeforamerica",
+    "hubot",
+    "hubot-scripts"
+  ],
+
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hubot-scripts/hubot-cfa-brigade-checkin.git"
+  },
+
+  "bugs": {
+    "url": "https://github.com/hubot-scripts/hubot-cfa-brigade-checkin/issues"
+  },
+
+  "dependencies": {
+    "coffee-script": "~1.6"
+  },
+
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "sinon-chai": "*",
+    "sinon": "*",
+    "grunt-mocha-test": "~0.7.0",
+    "grunt-release": "~0.6.0",
+    "matchdep": "~0.1.2",
+    "grunt-contrib-watch": "~0.5.3"
+  },
+
+  "main": "index.coffee",
+
+  "scripts": {
+    "test": "grunt test"
+  }
+}
