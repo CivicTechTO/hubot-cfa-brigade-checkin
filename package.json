@@ -13,11 +13,11 @@
 
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-cfa-brigade-checkin.git"
+    "url": "git://github.com/patcon/hubot-cfa-brigade-checkin.git"
   },
 
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-cfa-brigade-checkin/issues"
+    "url": "https://github.com/patcon/hubot-cfa-brigade-checkin/issues"
   },
 
   "dependencies": {
