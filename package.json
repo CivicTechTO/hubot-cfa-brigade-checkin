@@ -1,7 +1,7 @@
 {
   "name": "hubot-cfa-brigade-checkin",
   "description": "A hubot script that allows CfA brigade checkins from Slack",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "author": "Patrick Connolly <patrick.c.connolly@gmail.com>",
   "license": "MIT",
   "keywords": [
