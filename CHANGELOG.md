@@ -1,3 +1,7 @@
+# 1.0.3
+
+* Added missing `scoped-http-client` pkg dep.
+
 # 1.0.2
 
 * Fixed baseUrl bug.
