@@ -1,3 +1,7 @@
+# 1.0.4
+
+* Fixed http client headers.
+
 # 1.0.3
 
 * Added missing `scoped-http-client` pkg dep.

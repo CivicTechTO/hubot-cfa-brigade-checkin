@@ -32,10 +32,11 @@ String::capitalize = ->
 
 class Slack
   http: (method) ->
-    slackBaseUrl = 'https://slack.com/api/'
-    HttpClient.create("#{slackBaseUrl}#{method}")
+    slackBaseUrl = 'https://slack.com/api'
+    url = "#{slackBaseUrl}/#{method}"
+    HttpClient.create(url)
       .query(token: config.slack_api_token)
-      .headers(Accept: 'application/json')
+      .header('Content-Type', 'application/json')
 
   get: (method, cb) ->
     @http(method)
@@ -56,9 +57,10 @@ class Slack
 
 class CFA
   http: (method) ->
-    cfaBaseUrl = "https://www.codeforamerica.org/brigade/#{config.brigade_id}/"
-    HttpClient.create("#{cfaBaseUrl}#{method}/")
-      .headers(Accept: 'application/x-www-form-urlencoded')
+    cfaBaseUrl = "https://www.codeforamerica.org/brigade/#{config.brigade_id}"
+    url = "#{cfaBaseUrl}/#{method}/"
+    HttpClient.create(url)
+      .header('Content-Type', 'application/x-www-form-urlencoded')
 
   post: (method, data, cb) ->
     form_data = querystring.stringify(data)
