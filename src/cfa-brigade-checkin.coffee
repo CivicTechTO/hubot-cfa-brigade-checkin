@@ -56,7 +56,7 @@ class Slack
 
 class CFA
   http: (method) ->
-    cfaBaseUrl = "https://www.codeforamerica.org/brigade/#{config.brigade_id}"
+    cfaBaseUrl = "https://www.codeforamerica.org/brigade/#{config.brigade_id}/"
     HttpClient.create("#{cfaBaseUrl}#{method}/")
       .headers(Accept: 'application/x-www-form-urlencoded')
 
